@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
-        
+        localStorage.removeItem(STORAGE_KEY);
         const formData = {
             email: form.elements.email.value,
             message: form.elements.message.value
